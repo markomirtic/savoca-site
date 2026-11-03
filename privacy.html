@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Savoca Privacy Policy</title>
+<meta name="description" content="How Savoca collects, uses and protects your data.">
+<style>
+:root{--bg:#FBF5EA;--card:#FFFBF3;--text:#2B211B;--muted:#6E5F54;--accent:#B8553A;--line:#E7DAC6}
+@media (prefers-color-scheme:dark){:root{--bg:#1D1612;--card:#271E18;--text:#F3E9DA;--muted:#B5A595;--accent:#E08A6B;--line:#3A2E26}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+header,main,footer{max-width:720px;margin:0 auto;padding:0 20px}
+header{padding-top:28px;padding-bottom:8px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+.brand{font:700 22px Georgia,"Times New Roman",serif;color:var(--accent);text-decoration:none;letter-spacing:.02em}
+nav a{color:var(--muted);text-decoration:none;margin-left:16px;font-size:15px}nav a:hover{color:var(--accent)}
+h1{font:700 34px/1.2 Georgia,"Times New Roman",serif;margin:28px 0 4px}
+h2{font:700 22px/1.3 Georgia,"Times New Roman",serif;margin:36px 0 8px;color:var(--accent)}
+h3{font-size:17px;margin:20px 0 4px}
+.meta{color:var(--muted);font-size:14px;margin:0 0 24px}
+a{color:var(--accent)}
+ul{padding-left:22px}li{margin:4px 0}
+table{width:100%;border-collapse:collapse;font-size:15px;margin:12px 0}
+th,td{text-align:left;vertical-align:top;padding:8px 10px;border-bottom:1px solid var(--line)}th{color:var(--muted);font-weight:600}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 20px;margin:16px 0}
+.cta a{display:inline-block;margin:6px 10px 6px 0;padding:10px 18px;border-radius:999px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+footer{padding-top:32px;padding-bottom:48px;color:var(--muted);font-size:14px;border-top:1px solid var(--line);margin-top:48px}
+@media (max-width:480px){body{font-size:16px}h1{font-size:28px}th,td{padding:6px 4px}}
+</style>
+</head>
+<body>
+<header><a class="brand" href="index.html">Savoca</a><nav><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav></header>
+<main>
+<h1>Privacy Policy</h1>
+<p class="meta">Last updated: 27 October 2026</p>
+
+<p>This policy explains what data the Savoca iOS app ("Savoca", "the app", "we", "us") collects, why, who we share it with, and the choices you have. We try to collect as little as possible.</p>
+
+<h2>1. Who we are</h2>
+<p>Savoca is operated by Marko Mirtic (the "controller" of your data). Contact: <a href="mailto:support@savoca.app">support@savoca.app</a>.</p>
+
+<h2>2. Data we collect</h2>
+<h3>Data that stays on your device</h3>
+<p>Your grocery lists, inventory, preferences, favorites, free-trial counters and notification settings are stored locally on your device. If you never sign in, this data is not uploaded to our servers.</p>
+
+<h3>Anonymous session</h3>
+<p>When you open the app it creates an anonymous account identifier with our backend (Supabase) so that AI features and usage limits can work. It is not linked to your name or email.</p>
+
+<h3>Account data (only if you sign in)</h3>
+<p>Signing in is optional and uses Sign in with Apple or Google Sign-In. We receive a unique account ID and, depending on what you share, your email address (possibly an Apple private relay address) and name. You can also set a display name and a profile picture inside the app. The profile picture you upload is stored in our storage bucket and is publicly readable by anyone who has its link.</p>
+
+<h3>Synced content (only if you sign in)</h3>
+<p>Once signed in, the following is synced to our servers so you can use it on several devices and share lists:</p>
+<ul>
+<li>Grocery lists (name, color, icon) and their items (name, quantity, unit, section, checked state, order);</li>
+<li>Inventory items (name, quantity, unit, storage section, expiration date, notes, date added, photo reference);</li>
+<li>Your profile (display name, avatar);</li>
+<li>List sharing data: invite links, and which accounts are collaborators on which lists.</li>
+</ul>
+
+<h3>List sharing</h3>
+<p>If you share a list, people you invite who join can see and edit that list's items, and can see your display name and avatar. Anyone with an active invite link can preview the list name and owner display name and may join after signing in. You can revoke invites and remove collaborators in the app.</p>
+
+<h3>Photos you scan</h3>
+<p>If you use the grocery scanning feature, the photo you take or choose is sent through our server to an AI service to identify food items. According to our implementation the image is used only to produce the result, is not stored by us, and is not written to our logs; location metadata is removed on your device before upload. Please keep people and documents out of the frame. Photos you attach to inventory items or use as your avatar are separate and are only uploaded as described above.</p>
+
+<h3>AI recipe requests</h3>
+<p>When you ask for recipes, the app sends to our server, and from there to the AI provider: ingredient names with quantities and units from your inventory, ingredients that are expiring soon, ingredients to avoid, dietary and cuisine preferences, meal type, number of servings, titles of recipes you have already seen, and the app language. No name, email or account ID is included in the request to the AI provider.</p>
+
+<h3>Recipe and ingredient photos</h3>
+<p>To show pictures, the app sends a short search phrase (such as an ingredient or recipe name) to our server, which queries Unsplash. Results are cached on our server by search phrase and are not tied to you.</p>
+
+<h3>Purchases</h3>
+<p>Subscriptions are processed by Apple. We use RevenueCat to validate and manage entitlements. RevenueCat receives purchase information (Apple receipt data, product, subscription status, an app user ID and, if you sign in, your Savoca account ID, plus device and technical information). We do not see your payment card details.</p>
+
+<h3>Usage limits and technical data</h3>
+<p>We store a per-account daily count of scans to enforce fair-use limits. Our hosting provider may process IP addresses and request metadata in standard server logs for security and operation. Free-trial counters for recipes and scans are kept on your device.</p>
+
+<h3>Notifications and permissions</h3>
+<p>If you allow it, the app schedules local notifications about items nearing expiry; these are generated on your device and do not require a push server. The camera is used only when you choose to scan or photograph items. The photo library is used only when you choose a picture. You can change these permissions in iOS Settings. We do not use advertising identifiers, do not track you across other companies' apps or websites, and do not include third-party advertising or analytics SDKs.</p>
+
+<h2>3. How we use data</h2>
+<ul>
+<li>To provide the app: lists, inventory, expiry reminders, sync and sharing;</li>
+<li>To generate recipes and identify items in photos;</li>
+<li>To manage subscriptions and free-usage limits;</li>
+<li>To secure the service, prevent abuse and fix problems;</li>
+<li>To answer your support requests.</li>
+</ul>
+<p>Our legal bases (where GDPR or similar law applies) are performance of our contract with you, our legitimate interests in operating and securing the service, and your consent (for example, to camera access and notifications).</p>
+<p>We do not sell your personal data and do not share it for cross-context behavioral advertising.</p>
+
+<h2>4. Third-party service providers</h2>
+<table>
+<tr><th>Provider</th><th>Purpose</th><th>Data</th></tr>
+<tr><td>Supabase</td><td>Backend, database, authentication, file storage, server functions</td><td>Account ID, synced content, profile, avatar, usage counts</td></tr>
+<tr><td>DeepSeek</td><td>AI recipe generation and photo recognition</td><td>Ingredient names, preferences, language; scan photos</td></tr>
+<tr><td>Unsplash</td><td>Food photos</td><td>Search phrases (via our server)</td></tr>
+<tr><td>RevenueCat</td><td>Subscription management</td><td>Purchase data, app user ID</td></tr>
+<tr><td>Apple</td><td>Sign in with Apple, App Store payments, notifications</td><td>Per Apple's policies</td></tr>
+<tr><td>Google</td><td>Google Sign-In</td><td>Per Google's policies</td></tr>
+</table>
+<p>These providers process data on our behalf or under their own terms and privacy policies. Some are located outside your country, including outside the EEA, Serbia and the United States (for instance DeepSeek's AI service). Where required we rely on appropriate safeguards for international transfers. Because AI requests are sent to DeepSeek, please do not enter sensitive information in free-text fields or photos.</p>
+
+<h2>5. Retention and deletion</h2>
+<ul>
+<li>Local data stays on your device until you delete items or the app.</li>
+<li>Synced data is kept while your account exists. Deleted items are marked as deleted so deletions sync to your other devices, and are then removed in the normal course of operation.</li>
+<li>You can delete your account in the app under Account &rarr; Delete Account. This removes your account and the data associated with it from our servers. You can also email <a href="mailto:support@savoca.app">support@savoca.app</a> and we will delete it for you.</li>
+<li>Purchase records held by Apple and RevenueCat, and aggregated or backup copies, may be kept for the period required by law or their policies. Deleting your account does not cancel an Apple subscription; cancel it in your Apple ID settings.</li>
+<li>Recipe requests and scan photos are not retained by us beyond processing; the AI provider may retain data according to its own policy.</li>
+</ul>
+
+<h2>6. Your rights</h2>
+<p>Depending on where you live (including under the GDPR, the Serbian Law on Personal Data Protection and the California CCPA/CPRA), you may have the right to access, correct, delete or export your data, to restrict or object to processing, to withdraw consent, and to complain to your data protection authority (in Serbia, the Commissioner for Information of Public Importance and Personal Data Protection). California residents may also request information about disclosures and are free from discrimination for exercising rights. We do not sell or share personal information as defined by the CCPA. To exercise a right, email <a href="mailto:support@savoca.app">support@savoca.app</a>; we may need to verify your identity.</p>
+
+<h2>7. Children</h2>
+<p>Savoca is not directed at children under 13 (or under 16 where that is the local age of digital consent), and we do not knowingly collect their personal data. If you believe a child has given us personal data, contact us and we will delete it.</p>
+
+<h2>8. Security</h2>
+<p>Data is transmitted over encrypted connections. Access to synced data is restricted per account using database access rules, and secret keys for AI and photo services are kept on the server, not in the app. No system is perfectly secure, so we cannot guarantee absolute security.</p>
+
+<h2>9. Changes</h2>
+<p>We may update this policy. We will change the date above and, for material changes, tell you in the app or by another suitable means.</p>
+
+<h2>10. Contact</h2>
+<p>Marko Mirtic<br>Email: <a href="mailto:support@savoca.app">support@savoca.app</a></p>
+</main>
+<footer>&copy; 2026 Savoca &middot; <a href="privacy.html">Privacy Policy</a> &middot; <a href="terms.html">Terms of Use</a> &middot; <a href="mailto:support@savoca.app">support@savoca.app</a></footer>
+</body>
+</html>
